@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador</h1>
+        <form>
+            <label>
+                <span>Escriba el texto que desea encriptar o desencriptar:</span>
+                <textarea id="input" rows="5"></textarea>
+            </label>
+            <label>
+                <input type="radio" name="action" value="encrypt" checked>
+                Encriptar
+            </label>
+            <label>
+                <input type="radio" name="action" value="decrypt">
+                Desencriptar
+            </label>
+            <div>
+                <input type="submit" value="Enviar" id="submit-btn">
+                <button type="button" id="copy-btn">Copiar</button>
+            </div>
+        </form>
+        <label>
+            <span>Texto encriptado o desencriptado:</span>
+            <textarea id="output" rows="5" class="output" readonly></textarea>
+        </label>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Desarrollado por Jose Luis Baena Jeronimo</span>
+        </div>
+    </footer>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
